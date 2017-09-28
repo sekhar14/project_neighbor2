@@ -1,7 +1,24 @@
-/** The model for app. These are the coworking spaces listings that will
-be shown to the user.*/
-
 var initialSpaces = [
+  {
+    "name" : "Puri sea beach",
+    "location" : {"lat" : 19.79440639 ,"lng" : 85.82536697},
+    "fs_id" : "4cfb649ac671721e4959c318"
+  },
+  {
+    "name" : "Domino's pizza",
+    "location" : {"lat" : 19.796774 ,"lng" : 85.826311},
+    "fs_id" : "4d777cd9f2c05481cbcaa9a1"
+  },
+  {
+    "name" : "chung wah",
+    "location" : {"lat" : 19.8011383 ,"lng" : 85.8319102},
+    "fs_id" : "506ac48be4b0677a1fd4f871"
+  },
+  {
+    "name" : "Hotel holiday resort",
+    "location" : {"lat" : 19.801556,"lng" : 85.8413047},
+    "fs_id" : "4bd79337304fce728db733ab"
+  }
 ]
 
 // Foursquare API Url parameters in global scope
@@ -17,7 +34,7 @@ var map,
   bounds;
 
 //googleSuccess() is called when page is loaded
-function googleSuccess() {
+function mapLoad() {
   "use strict";
   //Google map elements - set map options
   var mapOptions = {

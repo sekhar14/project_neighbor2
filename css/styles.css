@@ -25,7 +25,7 @@ body {
 }
 
 header {
-  background: #43aa8b;
+  background: #45dd45;
   height: 60px;
   margin-right: 50px;
   position: fixed;
@@ -49,19 +49,12 @@ h3 {
 }
 
 a {
-  color: #43aa8b;
   font-weight: 300;
   text-decoration: none;
 }
 
 a:hover {
-  color: #43aa8b;
   text-decoration: underline;
-}
-
-ul,
-li {
-  color:#43aa8b;
 }
 
 input {
@@ -74,7 +67,6 @@ input {
 
 button {
   position: relative;
-  background-color: #43aa8b;
   border: none;
   color: white;
   padding: 13px 18px;
@@ -95,7 +87,6 @@ li {
   list-style-type: none;
   padding: 5px 10px;
   background: #f7f7f7;
-  border-bottom: #43aa8b 1px solid;
 }
 
 li:hover {
@@ -149,7 +140,6 @@ li:hover {
 .filter-input {
   max-width: 80%;
   vertical-align: center;
-  color: #43aa8b;
   margin-top: 10px;
   margin-bottom: 10px;
 }
