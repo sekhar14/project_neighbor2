@@ -8,7 +8,7 @@ var initialSpaces = [
 var BaseUrl = "https://api.foursquare.com/v2/venues/",
     fsClient_id = "client_id=RLBSLOXZA1YH3JMM2AUVAO3DBA5OP5KJ3QATT2FA4IZYEHDN",
     fsClient_secret = "&client_secret=KEOJFBPEQTVUI3LQUZWHESGQU5J0SME3PXA0UWKWJP0J1XYZ",
-    fsVersion = "&v=20161507";
+    fsVersion = "&v=20170928";
 
 
 // Create global variables to use in google maps
@@ -22,8 +22,8 @@ function googleSuccess() {
   //Google map elements - set map options
   var mapOptions = {
     "center": {
-      "lat": 48.8676305,
-      "lng": 2.3495396
+      "lat": 19.817743,
+      "lng": 85.828629
     },
     zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
