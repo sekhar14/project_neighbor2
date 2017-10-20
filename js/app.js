@@ -1,4 +1,4 @@
-var initialSpaces = [
+var starting = [
   {
     "name" : "Puri sea beach",
     "location" : {"lat" : 19.79440639 ,"lng" : 85.82536697},
@@ -23,9 +23,9 @@ var initialSpaces = [
 
 // Foursquare API Url parameters in global scope
 var BaseUrl = "https://api.foursquare.com/v2/venues/",
-    fsClient_id = "client_id=RLBSLOXZA1YH3JMM2AUVAO3DBA5OP5KJ3QATT2FA4IZYEHDN",
-    fsClient_secret = "&client_secret=KEOJFBPEQTVUI3LQUZWHESGQU5J0SME3PXA0UWKWJP0J1XYZ",
-    fsVersion = "&v=20170928";
+    fsClient_id = "client_id=0FGZHSJJQZ52CWQ2NFDXZNRECQ0YHODVLQIEGF1DXC1VG4N",
+    fsClient_secret = "&client_secret=C01R0AI41I0OSFXJBSGZODPGSXHSYBQYBWXI0W3AAK4WJ4YE",
+    fsVersion = "&v=20171020";
 
 
 // Create global variables to use in google maps
@@ -34,9 +34,10 @@ var map,
   bounds;
 
 //googleSuccess() is called when page is loaded
-function mapLoad() {
+function loadMap() {
   "use strict";
   //Google map elements - set map options
+  console.log("Map load is called on callback");
   var mapOptions = {
     "center": {
       "lat": 19.817743,
@@ -94,6 +95,7 @@ function mapLoad() {
   }
 
   // Bounce effect on marker
+  /*
   function toggleBounce(marker) {
     if (marker.getAnimation() !== null) {
       marker.setAnimation(null);
@@ -104,6 +106,7 @@ function mapLoad() {
       }, 700);
     }
   };
+  */
 
  function ViewModel() {
     var self = this;
@@ -116,7 +119,7 @@ function mapLoad() {
 
     // Creating list elements from the spaceList
     this.spaceList = ko.observableArray();
-    initialSpaces.forEach(function(item){
+    starting.forEach(function(item){
       self.spaceList.push(new Space(item));
     });
 
